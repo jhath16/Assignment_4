@@ -39,7 +39,6 @@ ul {
   margin:0;
 }
 
-
 .header-text {
   letter-spacing:-.19px;
   font-size:16px;
@@ -70,11 +69,12 @@ h1 {
   font-family:"open sans", "sans serif";
   text-align:center;
   margin:0;
-  margin-top:155px;
+  margin-top:131px;
   font-size:110px;
 }
 .top p {
   text-align:center;
+  margin-top:-25px;
   color:#0B3550;
   font-family:"Open sans", "sans serif";
 }
@@ -124,22 +124,41 @@ h2 {
   font-size:62px;
   color:#0B3551;
 }
-.middle .left img {
-  vertical-align:middle;
-  background-color:#5E686F;
-}
+
 .bottom-links img {
   width:33px;
   height:30px;
+  vertical-align:middle;
+  background-color:#5e686f;
+}
+.shade {
+  background-color:rgba(10, 39, 255, 0.36);
+  width:100%;
+  height:100%;
+  -webkit-transition:background-color .5s ease;
+}
+.shade:hover {
+  background-color:rgba(0,0,0,0);
 }
 .bottom-links a{
+  color:white;
+  text-decoration:none;
+  font-family:"open sans", "sans serif";
+  background-color:#a3b3be;
   display:inline-block;
   width:100%;
   height:100%;
+  -webkit-transition:background-color .5s ease;
+}
+.bottom-links a:hover {
+  background-color:#196Fb1;
 }
 .bottom-links span {
   margin:0 auto;
+  color:white;
+  font-size:13px;
 }
+
 .bottom-links {
   display:inline-block;
   vertical-align:middle;
@@ -148,8 +167,34 @@ h2 {
   width:158px;
   height:30px;
 }
-.left span {
-  vertical-align:middle;
+.author {
+  margin-top:83px;
+  margin-bottom:55px;
+}
+.author img {
+  display:block;
+  margin:0 auto;
+  width:84px;
+  height:84px;
+  border-radius:42px;
+}
+.author p {
+  margin-top:11px;
+  margin-bottom:-5px;
+  color:#196FB1;
+  text-align:center;
+}
+.author nav {
+  text-align:center;
+}
+.author a{
+  color:#a3b3be;
+  text-decoration:none;
+  font-size:13px;
+  padding-left:5px;
+  padding-right:5px;
+  font-weight:bold;
+  letter-spacing:-.2px;
 }
 .middle .right {
   height:100%;
@@ -185,16 +230,20 @@ h4 {
   margin-top:0;
 }
 #pic-1 {
-  background-color:lightcyan;
+  background:url(http://placekitten.com/325/332);
 }
+
 #pic-2 {
-  background-color:lightblue;
+    background:url(https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xpf1/t1.0-9/969991_10203793186215805_2659154317618703429_n.jpg);
+    background-size:325px 332px;
 }
 #pic-3 {
-  background-color:yellow;
+  background:url(https://pbs.twimg.com/media/Bt5Ta35IgAEdqp5.jpg);
+  background-size:325px 332px;
 }
 #pic-4 {
-  background-color:lightgreen;
+  background:url(http://i3.kym-cdn.com/photos/images/facebook/000/581/296/c09.jpg);
+  background-size:325px 332px;
 }
 .pic-container .pic-link {
   width:25%;
