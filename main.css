@@ -103,7 +103,7 @@ h1 {
 /* Begin Middle*/
 .middle {
   margin:0 auto;
-  height:1156px;
+  height:1007px;
   width:100%;
   position:relative;
   border-bottom-color:#E1E7EA;
@@ -115,6 +115,34 @@ h1 {
   background-size:22px 22px;
   width:22px;
   height:22px;
+  display:inline-block;
+  vertical-align:middle;
+}
+#creds {
+  color:#196fb1;
+  font-size:12px;
+  font-weight:bold;
+  vertical-align:bottom;
+  padding-left:4px;
+}
+.underhead p {
+  margin:0;
+  display:inline-block;
+}
+.underhead {
+  padding-left:4px;
+  margin-bottom:38px;
+}
+.underhead span {
+  color:#a3b3be;
+}
+span.casper {
+  position:relative;
+  top:5px;
+  left:10px;
+  font-size:14px;
+  font-family:"open sans", "sans serif";
+  letter-spacing:-.65px;
 }
 .middle .left {
   height:100%;
@@ -126,17 +154,37 @@ h1 {
 }
 .middle .left a {
   color:#196FB1;
+  -webkit-transition:color .5s ease;
+}
+.middle .left a:hover {
+  color:#000;
+}
+.content {
+  letter-spacing:-.5px;
+  line-height:1.67;
+  margin-bottom:29px;
+}
+
+#p1 {
+margin-bottom:25px;
+}
+#p3 {
+margin-bottom:25px;
+}
+#p4 {
+  margin-bottom:10px;
 }
 .middle .left h3 {
   border-left:2px #D3D3D3 solid;
   letter-spacing:-1px;
   padding-left:17px;
-  padding-top:10px;
+  padding-top:2px;
   padding-bottom:6px;
   margin-left:5px;
   font-size:28px;
   font-family:"open sans", "sans serif";
   color:#196FB1;
+  margin-top:22px;
 }
 .middle .left p {
   text-align:left;
@@ -144,12 +192,17 @@ h1 {
   font-family:"open sans", "sans serif";
   color:#525E66;
 }
+
 h2 {
   font-family:"Oswald" "sans serif";
-  font-size:62px;
+  font-size:63px;
   color:#0B3551;
+  font-weight:100;
+  margin-top:51px;
+  line-height:1.13;
+  letter-spacing:.4px;
+  margin-bottom:5px;
 }
-
 .bottom-links img {
   width:33px;
   height:30px;
@@ -157,8 +210,18 @@ h2 {
   background-color:#5e686f;
   -webkit-transition:background-color .5s ease;
 }
+.middle a.casper {
+  color:#a3b3be;
+  -webkit-transition:color .5s ease;
+}
+.middle a.casper:hover {
+  color:#196fb1;
+}
+#link-1 {
+  margin-left:3px;
+}
 .shade {
-  background-color:rgba(25, 113, 186, .8);
+  background-color:rgba(25, 113, 186, .7);
   width:100%;
   height:100%;
   -webkit-transition:background-color .5s ease;
@@ -252,6 +315,13 @@ h2 {
   padding-right:1px;
   letter-spacing:.1px;
 }
+.ad-container .img {
+  background:url("http://placekitten.com/g/278/300");
+  width:278px;
+  height:300px;
+  position:relative;
+  bottom:4px;
+}
 .right a {
   color:#a3b3be;
   -webkit-transition:color .5s ease;
@@ -263,7 +333,8 @@ h4 {
   color:#196Fb1;
   font-family:"oswald", "sans serif";
   font-weight:100;
-  margin-bottom:0;
+  margin-bottom:4px;
+  margin-top:46px;
   font-size:18px;
   letter-spacing:-.2px;
 }
@@ -279,8 +350,8 @@ h4 {
 }
 .bottom h2 {
   letter-spacing:.5px;
-  margin-top:24px;
-  margin-bottom:30px;
+  margin-top:35px;
+  margin-bottom:40px;
 }
 #pic-1 {
   background:url(http://placekitten.com/325/332);
@@ -291,7 +362,7 @@ h4 {
     background-size:325px 332px;
 }
 #pic-4 {
-  background:url(https://pbs.twimg.com/media/Bt5Ta35IgAEdqp5.jpg);
+  background:url(https://scontent-b-atl.xx.fbcdn.net/hphotos-xpf1/t31.0-8/10258757_10152082774927611_7812950219303935176_o.jpg);
   background-size:325px 332px;
 }
 #pic-3 {
@@ -390,4 +461,10 @@ h4 {
 }
 a.dontneedit {
   border-right:none;
+}
+.underline {
+  text-decoration:underline;
+}
+.inline {
+  display:inline;
 }
