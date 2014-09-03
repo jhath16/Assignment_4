@@ -17,6 +17,8 @@ $shadetransition:background-color .5s ease;
 $header-width:990px;
 $image-width:325px;
 $image-height:332px;
+$authorDimension:84px;
+$author-small-dimension:22px;
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -164,9 +166,9 @@ h1 {
 
 .underhead-pic {
   background:url("https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/575759_10202454080138990_498206308_n.jpg?oh=c766034874d4de43ea2ad7e81f057fe0&oe=547095D7&__gda__=1416110852_76aa268f3199e4b36e5047ec5261d27a");
-  background-size:22px 22px;
-  width:22px;
-  height:22px;
+  background-size:$author-small-dimension $author-small-dimension;
+  width:$author-small-dimension;
+  height:$author-small-dimension;
   display:inline-block;
   vertical-align:middle;
 }
@@ -244,7 +246,7 @@ margin-bottom:25px;
   margin-left:5px;
   font-size:28px;
   font-family:$sans;
-  color:#196FB1;
+  color:$green-blue;
   margin-top:22px;
 }
 
@@ -278,7 +280,7 @@ h2 {
   color:$casper;
   -webkit-transition:$colortransition;
 
-  &: {
+  &:hover {
     color:$green-blue;
   }
 }
@@ -305,22 +307,19 @@ h2 {
   width:100%;
   height:100%;
   -webkit-transition:$shadetransition;
-}
 
-.bottom-links a:hover {
-  background-color:#196Fb1;
+  &:hover img {
+    background-color:$prussian-blue;
+  }
+    span {
+      margin:0 auto;
+      color:white;
+      font-size:13px;
+  }
+    a:hover {
+      background-color:$green-blue;
+  }
 }
-
-.bottom-links a:hover img {
-  background-color:#0b3540;
-}
-
-.bottom-links span {
-  margin:0 auto;
-  color:white;
-  font-size:13px;
-}
-
 
 .author {
   margin-top:85px;
@@ -329,7 +328,7 @@ h2 {
   p {
     margin-top:11px;
     margin-bottom:-5px;
-    color:#green-blue;
+    color:$green-blue;
     text-align:center;
   }
   nav {
@@ -345,15 +344,14 @@ h2 {
     font-weight:bold;
     letter-spacing:-.2px;
   }
-}
-
-.author-pic {
-  background:url("https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/575759_10202454080138990_498206308_n.jpg?oh=c766034874d4de43ea2ad7e81f057fe0&oe=547095D7&__gda__=1416110852_76aa268f3199e4b36e5047ec5261d27a");
-  background-size:84px 84px;
-  display:block;
-  margin:0 auto;
-  width:84px;
-  height:84px;
+  .author-pic {
+    background:url("https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/575759_10202454080138990_498206308_n.jpg?oh=c766034874d4de43ea2ad7e81f057fe0&oe=547095D7&__gda__=1416110852_76aa268f3199e4b36e5047ec5261d27a");
+    background-size:$authorDimension $authorDimension;
+    display:block;
+    margin:0 auto;
+    width:$authorDimension;
+    height:$authorDimension;
+  }
 }
 
 .round {
@@ -435,27 +433,26 @@ h4 {
   margin-bottom:40px;
 }
 
-@mixin images($link) {
-  background:url($link);
-  background-size:$image-width $image-height;
-}
+
 /*These are all of the images used for the four block images under the
 *"Most Popular Posts" part of the bottom of page. It uses a mix-in with
 *an input variable of the linked picture to pull up each image.*/
+@mixin images($link) {
+  background-image:url($link);
+  background-size:$image-width $image-height;
+}
 
-.pic-container  {
-  :nth-child(1) {
-  @include images(http://placekitten.com/325/332);
-  }
-  :nth-child(2) {
-  @include images(https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xpf1/t1.0-9/969991_10203793186215805_2659154317618703429_n.jpg);
-  }
-  :nth-child(3) {
-  @include images(http://i3.kym-cdn.com/photos/images/facebook/000/581/296/c09.jpg);
-  }
-  :nth-child(4) {
-  @include images(https://scontent-b-atl.xx.fbcdn.net/hphotos-xpf1/t31.0-8/10258757_10152082774927611_7812950219303935176_o.jpg);
-  }
+.pic-1 {
+@include images("http://placekitten.com/325/332");
+}
+.pic-2 {
+@include images("https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xpf1/t1.0-9/969991_10203793186215805_2659154317618703429_n.jpg");
+}
+.pic-3 {
+@include images("http://i3.kym-cdn.com/photos/images/facebook/000/581/296/c09.jpg");
+}
+.pic-4 {
+@include images("https://scontent-b-atl.xx.fbcdn.net/hphotos-xpf1/t31.0-8/10258757_10152082774927611_7812950219303935176_o.jpg");
 }
 
 .pic-text {
