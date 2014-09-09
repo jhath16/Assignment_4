@@ -299,12 +299,12 @@ h2 {
   margin-top: 0.5px;
   padding-right: 1px;
   letter-spacing: 0.1px; }
-  .ad-container a .img {
-    background: url("http://placekitten.com/g/278/300");
-    width: 278px;
-    height: 300px;
-    position: relative;
-    bottom: 4px; }
+.ad-container .img {
+  background: url("http://placekitten.com/g/278/300");
+  width: 278px;
+  height: 300px;
+  position: relative;
+  bottom: 4px; }
 
 .right a {
   color: #a3b3be;
@@ -403,11 +403,11 @@ h4 {
   .footer img {
     padding-top: 3px; }
   .footer nav {
-    top: 36px;
+    top: 23px;
     font-family: "open sans", "sans serif";
     font-size: 13px;
     position: absolute;
-    right: 4px; }
+    right: 6px; }
   .footer div {
     position: relative;
     padding-top: 10px;
@@ -431,7 +431,7 @@ h4 {
     .footer a:visited {
       color: #a3b3be; }
     .footer a:hover {
-      color: #000; }
+      color: #fff; }
 
 a.dontneedit {
   border-right: none; }
