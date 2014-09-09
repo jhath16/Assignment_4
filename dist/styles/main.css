@@ -156,7 +156,7 @@ span.casper {
 
 .middle .left a {
   color: #196FB1;
-  -webkit-transition: color 0.5s ease; }
+  transition: all 0.5s ease; }
 
 .middle .left a:hover {
   color: #000; }
@@ -235,14 +235,14 @@ h2 {
   display: inline-block;
   width: 100%;
   height: 100%;
-  -webkit-transition: background-color 0.5s ease; }
+  transition: all 0.5s ease; }
   .bottom-links a:hover img {
     background-color: #0b3450; }
   .bottom-links a span {
     margin: 0 auto;
     color: white;
     font-size: 13px; }
-  .bottom-links a a:hover {
+  .bottom-links a:hover {
     background-color: #196fb1; }
 
 .author {
