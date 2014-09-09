@@ -174,14 +174,6 @@ h1 {
   vertical-align:middle;
 }
 
-.creds {
-  color:$green-blue;
-  font-size:12px;
-  font-weight:bold;
-  vertical-align:bottom;
-  padding-left:4px;
-}
-
 .underhead {
   padding-left:4px;
   margin-bottom:38px;
@@ -256,6 +248,14 @@ margin-bottom:25px;
   font-size:16px;
   font-family:$sans;
   color:#525E66;
+}
+
+.middle .left .creds {
+  color:$green-blue;
+  font-size:12px;
+  font-weight:bold;
+  vertical-align:bottom;
+  padding-left:4px;
 }
 
 h2 {

@@ -122,13 +122,6 @@ h1 {
   display: inline-block;
   vertical-align: middle; }
 
-.creds {
-  color: #196fb1;
-  font-size: 12px;
-  font-weight: bold;
-  vertical-align: bottom;
-  padding-left: 4px; }
-
 .underhead {
   padding-left: 4px;
   margin-bottom: 38px; }
@@ -192,6 +185,13 @@ span.casper {
   font-size: 16px;
   font-family: "open sans", "sans serif";
   color: #525E66; }
+
+.middle .left .creds {
+  color: #196fb1;
+  font-size: 12px;
+  font-weight: bold;
+  vertical-align: bottom;
+  padding-left: 4px; }
 
 h2 {
   font-family: "oswald", "sans serif";
