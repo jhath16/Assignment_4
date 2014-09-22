@@ -247,14 +247,13 @@ h2 {
 
 .author {
   margin-top: 85px;
-  margin-bottom: 55px; }
+  margin-bottom: 41px; }
   .author p {
     margin-top: 11px;
     margin-bottom: -5px;
     color: #196fb1;
     text-align: center; }
   .author nav {
-    text-align: center;
     border-right: 1px solid #fbfbfb; }
   .author a {
     color: #a3b3be;
