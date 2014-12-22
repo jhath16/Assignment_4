@@ -428,9 +428,8 @@ h4 {
     padding-left: 8px;
     border-right: 1px solid #a3b3be;
     text-decoration: none;
+    color:#a3b3be;
     -webkit-transition: color 0.5s ease; }
-    .footer a:visited {
-      color: #a3b3be; }
     .footer a:hover {
       color: #fff; }
 
